@@ -125,7 +125,3 @@ CREATE TABLE notifications (
 
 
 
-
--- Insertion d'un employé de test
-INSERT INTO utilisateurs (pseudo, email, password, role, valide) VALUES
-('employe1', 'employe1@example.com', '$2y$12$AEp/bQNwlcPtfzXipflhNehbAt5BsEdqdXoUDHntLptSIxv7gojWK', 'employe', 1);
