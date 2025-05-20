@@ -123,17 +123,7 @@ CREATE TABLE notifications (
     date_creation DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insertion de données de test
-INSERT INTO utilisateurs (pseudo, email, password, role, valide) VALUES
-('admin1', 'admin1@example.com', '$2y$12$WIHpVtDQvtYkD5R3GDpmuewURxO3/gYmTdChO7mowXIQoKjIQXIHW', 'admin', 1),
-('chauffeur1', 'chauffeur1@example.com', '$2y$12$qt4liTbvM7KT44EhFtdGCeJhKM1Sz4dDXOdbklBIZlYsVUDLdUPiq', 'chauffeur', 1),
-('user1', 'user1@example.com', '$2y$12$KmYRyFbRLyoNfPGeYK8DDOlGx98f/..T2i9XY0S8FqiFDR4u22FzO', 'utilisateur', 1);
 
-INSERT INTO voitures (user_id, marque, modele, immatriculation, couleur, date_immatriculation, places, ecologique)
-VALUES (2, 'Tesla', 'Model 3', 'AA-123-BB', 'Noir', '2023-01-10', 4, TRUE);
-
-INSERT INTO covoiturages (chauffeur_id, depart, arrivee, date_depart, date_arrivee, prix, places, voiture_id, ecologique)
-VALUES (2, 'Paris', 'Lyon', '2025-06-01 10:00:00', '2025-06-01 14:00:00', 25.00, 3, 1, TRUE);
 
 
 -- Insertion d'un employé de test
